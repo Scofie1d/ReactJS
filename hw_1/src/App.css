@@ -1,0 +1,20 @@
+.App {
+  min-height: 500px;
+  text-align: center;
+  background-color: darkgrey;
+  display: flex;
+}
+.message, .name{
+  text-shadow: 1px 1px 2px #000;
+}
+.message{
+  margin: 0 auto;
+  align-self: center;
+  color:aquamarine;
+}
+.name{
+  color: coral;
+ }
+
+
+

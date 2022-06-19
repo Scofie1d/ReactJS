@@ -7,13 +7,13 @@ const Count = () => {
     const dispatch = useDispatch();
     return (
         <div>
-            <button onClick={() => dispatch( {
-                type: 'delete'
-            })}> - </button>
-            {value}
-            <button onClick={() => dispatch( {
-                    type: 'add'
-                })}> + </button>
+           <div> <button onClick={() => dispatch( {
+               type: 'delete'
+           })}> - </button></div>
+           <div> {value}</div>
+           <div> <button onClick={() => dispatch( {
+               type: 'add'
+           })}> + </button></div>
         </div>
     );
 };

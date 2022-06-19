@@ -28,7 +28,7 @@ const reduser = (state = initialState, action) => {
     }
 }
 
-const store = createStore(reduser, composeWithDevTools(applyMiddleware(logger)));
+const store = createStore(reduser, composeWithDevTools());
 root.render(
  <Provider store={store}>
      <React.StrictMode>

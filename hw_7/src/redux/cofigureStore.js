@@ -1,10 +1,12 @@
 import {applyMiddleware, createStore, combineReducers} from 'redux';
 import {msgReduser} from "./redusers/messageReduser/msgReduser";
 import {chatsReduser} from "./redusers/chatsReduser/chatsReduser";
+import {logger} from "redux-logger/src";
 
 
 const time = store => next => action => {
     const delay = action?.meta?.delay;
+
     if(!delay) {
         return next(action);
     }
@@ -19,4 +21,4 @@ const time = store => next => action => {
 export const store = createStore(combineReducers({
     chats: chatsReduser,
     messages: msgReduser
-}), applyMiddleware(time))
+}), applyMiddleware(logger,time))

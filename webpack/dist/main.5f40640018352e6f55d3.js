@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",(function(){var e=document.querySelector(".container"),t=document.createElement("a");t.textContent="Привет",e.append(t)}));
